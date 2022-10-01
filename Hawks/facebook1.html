@@ -1,0 +1,202 @@
+<html>
+
+<head>
+    <title>
+        Facebook
+    </title>
+    <style>
+        table {
+            height: 100%;
+            border-collapse: collapse;
+            background-color: DEE6FE;
+        }
+
+        a {
+            color: 7CB7F6;
+        }
+
+        ul ul1 {
+            padding: 0;
+        }
+
+        ul li {
+            display: inline;
+        }
+
+        ul1 li1 {
+            display: inline;
+        }
+
+        ul li a {
+            background-color: 16CB73;
+            color: white;
+            padding: 10px 100px;
+            text-decoration: none;
+            border-radius: 4px 4px 4px 4px;
+        }
+
+        ul1 li1 a {
+            background-color: rgb(22, 111, 237);
+            color: white;
+            padding: 2px 4px;
+            text-decoration: none;
+
+
+        }
+
+        ul li a:hover {
+            background-color: skyblue;
+        }
+
+        ul1 li1 a:hover {
+            background-color: skyblue;
+        }
+
+        button {
+            background: rgb(149, 145, 145);
+            width: 19px;
+            height: 20px;
+            border-radius: 80%;
+            text-align: center;
+            color: white;
+            border: 1px solid black;
+        }
+
+        .WebContainer {
+            width: 100%;
+            min-width: 1000px;
+            height: auto;
+        }
+
+        p {
+            color: rgb(131, 136, 139);
+        }
+    </style>
+</head>
+
+<body>
+    <table style="width:100%; height:100%;">
+        <tr style="background-color:0C4A95; color:white; width: 40px;height: 80px; ">
+            <td style="font-size:40; text-align:center; width: 50%;">facebook</td>
+            <td style="width:50%">Email or phone
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Password<br>
+                <input type="text">&nbsp;&nbsp;&nbsp;
+                <input type="password">
+
+                <ul1>
+                    <li1><a href="csdetails.html" target="_blank">Log In</a></li1>
+                </ul1>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="form.html" style="text-decoration:none ;">Forgotten account</a>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p style="text-align:center; color:0C4A95; font-size: 23px;">Facebook helps you connect and share with
+                    the people in your<br>
+                    life.
+                    <br>
+                    <img src="facebookui.jpg" width="650px" height="350px">
+                </p>
+            </td>
+            <td style="height:100%; width:100%;">
+                <p><h1>Create an account</h1>
+                It's quick and easy<br>
+                <p><input type="text" placeholder="First name">
+                    <input type="text" placeholder="Surname">
+                </p>
+                <p><input type="text" placeholder="Mobile number or email address" size="46"></p>
+                <p><input type="password" placeholder="New passsword" size="46"></p>
+                <p>Birthday</p>
+                <select>
+                    <option value="birthday">1</option>
+                    <option value="birthday">2</option>
+                    <option value="birthday">3</option>
+                    <option value="birthday">4</option>
+                    <option value="birthday" selected>5</option>
+                    <option value="birthday">6</option>
+                    <option value="birthday">7</option>
+                    <option value="birthday">8</option>
+                    <option value="birthday">9</option>
+                    <option value="birthday">10</option>
+                    <option value="birthday">11</option>
+                    <option value="birthday">12</option>
+                    <option value="birthday">13</option>
+                    <option value="birthday">14</option>
+                    <option value="birthday">15</option>
+                    <option value="birthday">16</option>
+                    <option value="birthday">17</option>
+                    <option value="birthday">18</option>
+                    <option value="birthday">19</option>
+                    <option value="birthday">20</option>
+                    <option value="birthday">21</option>
+                    <option value="birthday">22</option>
+                    <option value="birthday">23</option>
+                    <option value="birthday">24</option>
+                    <option value="birthday">25</option>
+                    <option value="birthday">26</option>
+                    <option value="birthday">27</option>
+                    <option value="birthday">28</option>
+                    <option value="birthday">29</option>
+                    <option value="birthday">30</option>
+                    <option value="birthday">31</option>
+                </select>
+                <select>
+                    <option value="birthday">Janaury</option>
+                    <option value="birthday">February</option>
+                    <option value="birthday">March</option>
+                    <option value="birthday" selected>April</option>
+                    <option value="birthday">May</option>
+                    <option value="birthday">June</option>
+                    <option value="birthday">July</option>
+                    <option value="birthday">August</option>
+                    <option value="birthday">September</option>
+                    <option value="birthday">October</option>
+                    <option value="birthday">November</option>
+                    <option value="birthday">December</option>
+                </select>
+                <select id="ddlYears">
+                    <script type="text/javascript">
+                        window.onload = function () {
+                            //Reference the DropDownList.
+                            var ddlYears = document.getElementById("ddlYears");
+
+                            //Determine the Current Year.
+                            var currentYear = (new Date()).getFullYear();
+
+                            //Loop and add the Year values to DropDownList.
+                            for (var i = 1995; i <= currentYear; i++) {
+                                var option = document.createElement("OPTION");
+                                option.innerHTML = i;
+                                option.value = i;
+                                ddlYears.appendChild(option);
+                            }
+                        };
+                    </script>
+                </select>
+                <button type="button" onclick="alert('mandatry')">?</button></br>
+                <p>Gender</p>
+                <input type="radio" value="gender">Female&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" value="gender">Male&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" value="gender">Custom&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="button" onclick="alert('mandatry')">?</button></p>
+                <p>By clicking Sign Up, you agree to our <a href="form.html">Terms,Data Policy</a> and<br>
+                    <a href="form.html">Cookie Policy</a>. You may receive SMS notifications from us and<br> can opt out
+                    at any time.
+                </p><br>
+
+
+
+
+                <ul>
+                    <li><a href="csdetails.html" target="_blank">Sign Up</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

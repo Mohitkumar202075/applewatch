@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    background-color: rgb(219, 215, 215);
+    width: 434px;
+    font-family: 'Quicksand', sans-serif;
+    height: 100vh;
+    
+}
+.sidebar nav{
+    padding: 35px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+.sidebar nav li a{
+   text-decoration: none;
+   color: black;
+}
+.main{
+    width: 90vw;
+}
+.container{
+    display: flex;
+}
+.contactform{
+    padding: 0 80px;
+    padding-top: 80px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+
+}
+
+.contactform h1{
+    font-family: 'Bilbo Swash Caps', cursive;
+    padding: 12px 0;
+    font-size: 50px;
+}
+.contactform div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+
+}
+.contactform div input{
+   width: 26vw;
+   border-radius: 5px;
+   margin: 6px 0 0 0;
+   padding: 3px;
+}
+.buttons button{
+    padding: 5px 10px;
+    border-radius: 18px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: 30px;
+    margin: 0px 3px;
+    cursor: pointer;
+    width: 12%;
+
+}
+.buttons button:hover{
+    color: dodgerblue;
+    background-color: white;
+}
+#emailHelp{
+    font-size: 12px;
+    color:midnightblue;
+    margin: 0 5px;
+    padding: 8px 0 0 0;
+}
+#form-check{
+    flex-direction: row;
+
+
+}
+#form-check input{
+width: 24px;
+margin:3px 0;
+}
+.contactform div #enquiry{
+    width: 26vw;
+    height: 6vh;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+    
+ }
